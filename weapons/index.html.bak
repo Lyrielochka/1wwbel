@@ -1,0 +1,843 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оружие Великой войны</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero" id="home">
+        <nav class="main-nav">
+            <div class="logo">Первая Мировая</div>
+            <ul class="nav-links">
+                <li><a href="#Ships">Корабли</a></li>
+                <li><a href="#rifles">Винтовки</a></li>
+                <li><a href="#pistols">Пистолеты</a></li>
+                <li><a href="#machineguns">Пулемёты</a></li>
+                <li><a href="#tanks">Танки</a></li>
+                <li><a href="#Artillery">Артиллерия</a></li>
+                <li><a href="#airplane">Самолёты</a></li>
+            </ul>
+        </nav>
+        <div class="hero__inner">
+            <div class="hero__eyebrow">1914—1918 • Восточный и Западный фронт</div>
+            <h1>Оружие Великой войны</h1>
+            <p class="hero__lead">
+                Подборка ключевых образцов стрелкового и бронетанкового вооружения Первой мировой — от окопных револьверов до первых стальных чудовищ на гусеницах.
+            </p>
+            <a class="hero__cta" href="/index.html">Вернуться на главную</a>
+        </div>
+        <div class="hero__ambient" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="rifles">
+            <div class="section__header">
+                <h2>Винтовки</h2>
+                <p>Основное оружие пехоты, сформировавшее образ войны в окопах и на позициях.</p>
+            </div>
+            <div class="grid">
+                <article class="weapon-card" data-image="./shots/Arisaka Type 38.png">
+                    <div class="card-image">
+                        <img src="./shots/Arisaka Type 38.png" alt="Arisaka Type 38">
+                    </div>
+                    <div class="card-body">
+                        <h3>Arisaka Type 38</h3>
+                        <p>Длинная японская винтовка с малой отдачей и высоким ресурсом ствола.</p>
+                        <ul class="card-tags">
+                            <li>#1905</li>
+                            <li>#6.5&nbsp;мм</li>
+                            <li>#Япония</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./shots/Gewehr 98.png">
+                    <div class="card-image">
+                        <img src="./shots/Gewehr 98.png" alt="Gewehr 98">
+                    </div>
+                    <div class="card-body">
+                        <h3>Gewehr 98</h3>
+                        <p>Основной маузер кайзеровской армии с продольно-скользящим затвором.</p>
+                        <ul class="card-tags">
+                            <li>#1898</li>
+                            <li>#7.92&nbsp;мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./shots/Karabiner 98a (Kar 98AZ)..png">
+                    <div class="card-image">
+                        <img src="./shots/Karabiner 98a (Kar 98AZ)..png" alt="Karabiner 98a (Kar 98AZ)">
+                    </div>
+                    <div class="card-body">
+                        <h3>Karabiner 98a (Kar 98AZ)</h3>
+                        <p>Укороченный маузер для штурмовых подразделений и кавалерии.</p>
+                        <ul class="card-tags">
+                            <li>#1908</li>
+                            <li>#7.92&nbsp;мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./shots/Lebel M1886.png">
+                    <div class="card-image">
+                        <img src="./shots/Lebel M1886.png" alt="Lebel M1886">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lebel M1886</h3>
+                        <p>Первая винтовка под бездымный порох, изменившая баланс сил в Европе.</p>
+                        <ul class="card-tags">
+                            <li>#1886</li>
+                            <li>#8×50&nbsp;мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./shots/Lee-Enfield Mk III (SMLE).png">
+                    <div class="card-image">
+                        <img src="./shots/Lee–Enfield Mk III (SMLE).png" alt="Lee-Enfield Mk III (SMLE)">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lee-Enfield Mk III (SMLE)</h3>
+                        <p>Быстросменный затвор и магазин на 10 патронов для британских стрелков.</p>
+                        <ul class="card-tags">
+                            <li>#1907</li>
+                            <li>#7.7&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./shots/mosin.png">
+                    <div class="card-image">
+                        <img src="./shots/mosin.png" alt="mosin">
+                    </div>
+                    <div class="card-body">
+                        <h3>mosin</h3>
+                        <p>Основная винтовка русской армии, известная простотой и живучестью.</p>
+                        <ul class="card-tags">
+                            <li>#1891</li>
+                            <li>#7.62&nbsp;мм</li>
+                            <li>#Российская&nbsp;империя</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./shots/Springfield M1903.png">
+                    <div class="card-image">
+                        <img src="./shots/Springfield M1903.png" alt="Springfield M1903">
+                    </div>
+                    <div class="card-body">
+                        <h3>Springfield M1903</h3>
+                        <p>Точная винтовка корпуса морской пехоты с прицелом до двух километров.</p>
+                        <ul class="card-tags">
+                            <li>#1903</li>
+                            <li>#7.62&nbsp;мм</li>
+                            <li>#США</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="pistols">
+            <div class="section__header">
+                <h2>Пистолеты</h2>
+                <p>Компактное оружие офицеров и экипажей, рассчитанное на ближний бой.</p>
+            </div>
+            <div class="grid">
+                <article class="weapon-card" data-image="./gun/Colt M1911A1.png">
+                    <div class="card-image">
+                        <img src="./gun/Colt M1911A1.png" alt="Colt M1911A1">
+                    </div>
+                    <div class="card-body">
+                        <h3>Colt M1911A1</h3>
+                        <p>Легендарный американский пистолет, славившийся надежностью в окопной грязи.</p>
+                        <ul class="card-tags">
+                            <li>#1911</li>
+                            <li>#11.43&nbsp;мм</li>
+                            <li>#США</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./gun/FN M1900.png">
+                    <div class="card-image">
+                        <img src="./gun/FN M1900.png" alt="FN M1900">
+                    </div>
+                    <div class="card-body">
+                        <h3>FN M1900</h3>
+                        <p>Первая массовая модель Браунинга, ставшая эталоном компактного ношения.</p>
+                        <ul class="card-tags">
+                            <li>#1900</li>
+                            <li>#7.65&nbsp;мм</li>
+                            <li>#Бельгия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./gun/Luger P08.png">
+                    <div class="card-image">
+                        <img src="./gun/Luger P08.png" alt="Luger P08">
+                    </div>
+                    <div class="card-body">
+                        <h3>Luger P08</h3>
+                        <p>Немецкий парабеллум с фирменной коленной автоматикой и точной эргономикой.</p>
+                        <ul class="card-tags">
+                            <li>#1908</li>
+                            <li>#9×19&nbsp;мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./gun/Mauser C96.png">
+                    <div class="card-image">
+                        <img src="./gun/Mauser C96.png" alt="Mauser C96">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mauser C96</h3>
+                        <p>Самозарядный пистолет с деревянной кобурой-прикладом для точной стрельбы.</p>
+                        <ul class="card-tags">
+                            <li>#1896</li>
+                            <li>#7.63&nbsp;мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./gun/Nagant M1895.png">
+                    <div class="card-image">
+                        <img src="./gun/Nagant M1895.png" alt="Nagant M1895">
+                    </div>
+                    <div class="card-body">
+                        <h3>Nagant M1895</h3>
+                        <p>Револьвер царской армии с газоотводящим барабаном для приглушённого выстрела.</p>
+                        <ul class="card-tags">
+                            <li>#1895</li>
+                            <li>#7.62&nbsp;мм</li>
+                            <li>#Российская&nbsp;империя</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./gun/Roth-Steyr M1907.png">
+                    <div class="card-image">
+                        <img src="./gun/Roth–Steyr M1907.png" alt="Roth-Steyr M1907">
+                    </div>
+                    <div class="card-body">
+                        <h3>Roth-Steyr M1907</h3>
+                        <p>Кавалерийский пистолет Австро-Венгрии с жёсткой рамой и плавным спуском.</p>
+                        <ul class="card-tags">
+                            <li>#1907</li>
+                            <li>#8&nbsp;мм</li>
+                            <li>#Австро-Венгрия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./gun/Ruby.png">
+                    <div class="card-image">
+                        <img src="./gun/Ruby.png" alt="Ruby">
+                    </div>
+                    <div class="card-body">
+                        <h3>Ruby</h3>
+                        <p>Французский заказ на испанских заводах — простой и недорогой окопный пистолет.</p>
+                        <ul class="card-tags">
+                            <li>#1914</li>
+                            <li>#7.65&nbsp;мм</li>
+                            <li>#Испания/Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./gun/Webley Mk VI.png">
+                    <div class="card-image">
+                        <img src="./gun/Webley Mk VI.png" alt="Webley Mk VI">
+                    </div>
+                    <div class="card-body">
+                        <h3>Webley Mk VI</h3>
+                        <p>Шестизарядный револьвер британских офицеров с мощным патроном .455.</p>
+                        <ul class="card-tags">
+                            <li>#1915</li>
+                            <li>#11.5&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="machineguns">
+            <div class="section__header">
+                <h2>Пулемёты</h2>
+                <p>Средства создания непрерывного огня, изменившие взгляд на наступление.</p>
+            </div>
+            <div class="grid">
+                <article class="weapon-card" data-image="./machinegun/Chauchat (CSRG).png">
+                    <div class="card-image">
+                        <img src="./machinegun/Chauchat (CSRG).png" alt="Chauchat (CSRG)">
+                    </div>
+                    <div class="card-body">
+                        <h3>Chauchat (CSRG)</h3>
+                        <p>Лёгкий автоматический карабин французов — неоднозначный, но массовый.</p>
+                        <ul class="card-tags">
+                            <li>#1915</li>
+                            <li>#8×50&nbsp;мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./machinegun/Colt-Browning M1895.png">
+                    <div class="card-image">
+                        <img src="./machinegun/Colt–Browning M1895.png" alt="Colt-Browning M1895">
+                    </div>
+                    <div class="card-body">
+                        <h3>Colt-Browning M1895</h3>
+                        <p>Первая «косилка» Браунинга, служившая союзникам на треногах и машинах.</p>
+                        <ul class="card-tags">
+                            <li>#1895</li>
+                            <li>#7×57&nbsp;мм</li>
+                            <li>#США</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./machinegun/Hotchkiss M1914.png">
+                    <div class="card-image">
+                        <img src="./machinegun/Hotchkiss M1914.png" alt="Hotchkiss M1914">
+                    </div>
+                    <div class="card-body">
+                        <h3>Hotchkiss M1914</h3>
+                        <p>Воздушно-охлаждаемая система для длительного огня на позициях.</p>
+                        <ul class="card-tags">
+                            <li>#1914</li>
+                            <li>#8×50&nbsp;мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./machinegun/Lewis Gun.png">
+                    <div class="card-image">
+                        <img src="./machinegun/Lewis Gun.png" alt="Lewis Gun">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lewis Gun</h3>
+                        <p>Лёгкий авиационный и пехотный пулемёт с характерным радиатором.</p>
+                        <ul class="card-tags">
+                            <li>#1914</li>
+                            <li>#7.7&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./machinegun/Maxim.png">
+                    <div class="card-image">
+                        <img src="./machinegun/Maxim.png" alt="Maxim">
+                    </div>
+                    <div class="card-body">
+                        <h3>Maxim</h3>
+                        <p>Первый успешный автоматический пулемёт, задавший стандарт на десятилетия.</p>
+                        <ul class="card-tags">
+                            <li>#1884</li>
+                            <li>#7.92&nbsp;мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./machinegun/MG 08.png">
+                    <div class="card-image">
+                        <img src="./machinegun/MG 08.png" alt="MG 08">
+                    </div>
+                    <div class="card-body">
+                        <h3>MG 08</h3>
+                        <p>Немецкая модернизация «Максима» с впечатляющей плотностью огня.</p>
+                        <ul class="card-tags">
+                            <li>#1908</li>
+                            <li>#7.92&nbsp;мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./machinegun/Schwarzlose M0712.png">
+                    <div class="card-image">
+                        <img src="./machinegun/Schwarzlose M0712.png" alt="Schwarzlose M0712">
+                    </div>
+                    <div class="card-body">
+                        <h3>Schwarzlose M0712</h3>
+                        <p>Простой австро-венгерский станок с коротким ходом ствола и надёжной схемой.</p>
+                        <ul class="card-tags">
+                            <li>#1907</li>
+                            <li>#8×50&nbsp;мм</li>
+                            <li>#Австро-Венгрия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./machinegun/vickers.png">
+                    <div class="card-image">
+                        <img src="./machinegun/vickers.png" alt="vickers">
+                    </div>
+                    <div class="card-body">
+                        <h3>vickers</h3>
+                        <p>Усовершенствованный британский «Максим» с легендарной безотказностью.</p>
+                        <ul class="card-tags">
+                            <li>#1912</li>
+                            <li>#7.7&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="tanks">
+            <div class="section__header">
+                <h2>Танки</h2>
+                <p>Первые бронемашины, призванные прорвать позиционный тупик окопной войны.</p>
+            </div>
+            <div class="grid">
+                <article class="weapon-card" data-image="./tanks/A7V.png">
+                    <div class="card-image">
+                        <img src="./tanks/A7V.png" alt="A7V">
+                    </div>
+                    <div class="card-body">
+                        <h3>A7V</h3>
+                        <p>Немецкая бронированная громада, появившаяся на фронте в ограниченном количестве.</p>
+                        <ul class="card-tags">
+                            <li>#1917</li>
+                            <li>#57&nbsp;мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./tanks/Mark I.png">
+                    <div class="card-image">
+                        <img src="./tanks/Mark I.png" alt="Mark I">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mark I</h3>
+                        <p>Первый серийный танк мира, дебютировавший на Сомме в 1916 году.</p>
+                        <ul class="card-tags">
+                            <li>#1916</li>
+                            <li>#57&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./tanks/Mark IV.png">
+                    <div class="card-image">
+                        <img src="./tanks/Mark IV.png" alt="Mark IV">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mark IV</h3>
+                        <p>Модернизированный британский ромб с усиленной бронёй и запасом хода.</p>
+                        <ul class="card-tags">
+                            <li>#1917</li>
+                            <li>#57&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./tanks/Mark V.png">
+                    <div class="card-image">
+                        <img src="./tanks/Mark V.png" alt="Mark V">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mark V</h3>
+                        <p>Финальная эволюция британских ромбов с новым двигателем и трансмиссией.</p>
+                        <ul class="card-tags">
+                            <li>#1918</li>
+                            <li>#57&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./tanks/Renault FT.png">
+                    <div class="card-image">
+                        <img src="./tanks/Renault FT.png" alt="Renault FT">
+                    </div>
+                    <div class="card-body">
+                        <h3>Renault FT</h3>
+                        <p>Лёгкий французский танк с вращающейся башней — прототип всех будущих машин.</p>
+                        <ul class="card-tags">
+                            <li>#1917</li>
+                            <li>#37&nbsp;мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./tanks/Saint-Chamond.png">
+                    <div class="card-image">
+                        <img src="./tanks/Saint-Chamond.png" alt="Saint-Chamond">
+                    </div>
+                    <div class="card-body">
+                        <h3>Saint-Chamond</h3>
+                        <p>Тяжёлый французский штурмовой танк с длинным корпусом и 75-мм орудием.</p>
+                        <ul class="card-tags">
+                            <li>#1917</li>
+                            <li>#75&nbsp;мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./tanks/Schneider CA1.png">
+                    <div class="card-image">
+                        <img src="./tanks/Schneider CA1.png" alt="Schneider CA1">
+                    </div>
+                    <div class="card-body">
+                        <h3>Schneider CA1</h3>
+                        <p>Первый французский танк, созданный как средство поддержки пехоты.</p>
+                        <ul class="card-tags">
+                            <li>#1916</li>
+                            <li>#75&nbsp;мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section" id="airplane">
+            <div class="section__header">
+                <h2>Авиация</h2>
+                <p>Самолёты бля</p>
+            </div>
+            <div class="grid">
+                <article class="weapon-card" data-image="./airplane/Fokker Dr.I.png">
+                    <div class="card-image">
+                        <img src="./airplane/Fokker Dr.I.png" alt="Fokker Dr.I">
+                    </div>
+                    <div class="card-body">
+                        <h3>Fokker Dr.I</h3>
+                        <p>Трёхплан, знаменитый самолёт Красного Барона (Манфреда фон Рихтгофена). Отличался высокой манёвренностью, но небольшой скоростью.</p>
+                        <ul class="card-tags">
+                            <li>#1917</li>
+                            <li>#7,92&nbsp;мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./airplane/Sopwith Camel.png">
+                    <div class="card-image">
+                        <img src="./airplane/Sopwith Camel.png" alt="Sopwith Camel">
+                    </div>
+                    <div class="card-body">
+                        <h3>Sopwith Camel</h3>
+                        <p>Один из самых известных британских истребителей. Имеет характерный горб перед кабиной и отличную управляемость. Был сложен в пилотировании, но эффективен в бою.</p>
+                        <ul class="card-tags">
+                            <li>#1917</li>
+                            <li>#7,7&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./airplane/Airco DH.4.png">
+                    <div class="card-image">
+                        <img src="./airplane/Airco DH.4.png" alt="Airco DH.4">
+                    </div>
+                    <div class="card-body">
+                        <h3>Airco DH.4</h3>
+                        <p>Двухместный бомбардировщик и разведчик. Отличался высокой скоростью и хорошей защитой. Использовался и после войны.</p>
+                        <ul class="card-tags">
+                            <li>#1916</li>
+                            <li>#7,7&nbsp;мм</li>
+                            <li>#Великобритания</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./airplane/Voisin III.png">
+                    <div class="card-image">
+                        <img src="./airplane/Voisin III.png" alt="Voisin III">
+                    </div>
+                    <div class="card-body">
+                        <h3>Voisin III</h3>
+                        <p>Один из первых серийных бомбардировщиков войны. Имел металлический каркас и использовался для ночных бомбардировок.</p>
+                        <ul class="card-tags">
+                            <li>#1914</li>
+                            <li>#8&nbsp;мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./airplane/Morane-Saulnier Type L.png">
+                    <div class="card-image">
+                        <img src="./airplane/Morane-Saulnier Type L.png" alt="Morane-Saulnier Type L">
+                    </div>
+                    <div class="card-body">
+                        <h3>Morane-Saulnier Type L</h3>
+                        <p>Моноплан-разведчик и ранний истребитель. Использовался до появления более совершенных бипланов.</p>
+                        <ul class="card-tags">
+                            <li>#1914</li>
+                            <li>#8&nbsp;мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./airplane/Caproni Ca.3.png">
+                    <div class="card-image">
+                        <img src="./airplane/Caproni Ca.3.png" alt="Caproni Ca.3">
+                    </div>
+                    <div class="card-body">
+                        <h3>Caproni Ca.3</h3>
+                        <p>Тяжёлый трёхмоторный бомбардировщик. Один из первых стратегических бомбардировщиков в истории авиации.</p>
+                        <ul class="card-tags">
+                            <li>#1916</li>
+                            <li>#6,5&nbsp;мм</li>
+                            <li>#Италия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./airplane/Hansa-Brandenburg D.I">
+                    <div class="card-image">
+                        <img src="./airplane/Hansa-Brandenburg D.I" alt="Hansa-Brandenburg D.I">
+                    </div>
+                    <div class="card-body">
+                        <h3>Hansa-Brandenburg D.I</h3>
+                        <p>Истребитель необычной конструкции с перекрещивающимися стойками крыльев. Хорошо вооружён, но сложен в управлении.</p>
+                        <ul class="card-tags">
+                            <li>#1916</li>
+                            <li>#8&nbsp;мм</li>
+                            <li>#Австро-Венгрия</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+         <section class="section" id="Artillery">
+            <div class="section__header">
+                <h2>Артиллерия</h2>
+                <p>Лодки бля</p>
+            </div>
+            <div class="grid">
+                <article class="weapon-card" data-image="./artillery/75.png">
+                    <div class="card-image">
+                        <img src="./artillery/75.png" alt="A7V">
+                    </div>
+                    <div class="card-body">
+                        <h3>75-мм пушка образца 1897 года</h3>
+                        <p>Легендарная французская скорострельная полевая пушка. Обеспечивала высокую точность и скорострельность. Широко использовалась на всех фронтах, позже — и во Второй мировой.</p>
+                        <ul class="card-tags">
+                            <li>#1897</li>
+                            <li>#75 мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./artillery/8,8 cm SK.png">
+                    <div class="card-image">
+                        <img src="./artillery/8,8 cm SK.png" alt="Mark I">
+                    </div>
+                    <div class="card-body">
+                        <h3>8,8 cm SK L/45</h3>
+                        <p>Универсальное орудие, применявшееся как на кораблях, так и на сухопутных позициях. Предшественник знаменитых зениток времён Второй мировой войны.</p>
+                        <ul class="card-tags">
+                            <li>#1905</li>
+                            <li>#88 мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./artillery/77-мм полевая пушка FK 96.png">
+                    <div class="card-image">
+                        <img src="./artillery/77-мм полевая пушка FK 96.png" alt="Mark IV">
+                    </div>
+                    <div class="card-body">
+                        <h3>77-мм полевая пушка FK 96</h3>
+                        <p>Основная германская полевая пушка начала войны. Обладала высокой скорострельностью, но уступала французской 75-мм по дальности и удобству обслуживания.</p>
+                        <ul class="card-tags">
+                            <li>#1896</li>
+                            <li>#77 мм/li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./artillery/105-мм лёгкая гаубица leFH.png">
+                    <div class="card-image">
+                        <img src="./artillery/105-мм лёгкая гаубица leFH.png" alt="Mark V">
+                    </div>
+                    <div class="card-body">
+                        <h3>105-мм лёгкая гаубица leFH 98/09</h3>
+                        <p>Лёгкая гаубица для поддержки пехоты. Отличалась надёжностью и мощным фугасным снарядом. Использовалась на всех фронтах.</p>
+                        <ul class="card-tags">
+                            <li>#1909</li>
+                            <li>#105 мм</li>
+                            <li>#Германия</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./artillery/152-мм гаубица обр. 1909 г.png">
+                    <div class="card-image">
+                        <img src="./artillery/152-мм гаубица обр. 1909 г.png" alt="Renault FT">
+                    </div>
+                    <div class="card-body">
+                        <h3>152-мм гаубица обр. 1909 г.</h3>
+                        <p>Производилась по французской лицензии «Шнейдер». Была одной из лучших тяжёлых гаубиц русской армии, обеспечивая дальность стрельбы до 8,5 км.</p>
+                        <ul class="card-tags">
+                            <li>#1909</li>
+                            <li>#152 мм</li>
+                            <li>#Российская империя</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./artillery/122-мм гаубица обр. 1910 г.png">
+                    <div class="card-image">
+                        <img src="./artillery/122-мм гаубица обр. 1910 г.png" alt="Saint-Chamond">
+                    </div>
+                    <div class="card-body">
+                        <h3>122-мм гаубица обр. 1910 г.</h3>
+                        <p>Основное полевое тяжёлое орудие российской армии. Отличалось надёжной конструкцией и точной стрельбой. Использовалось вплоть до 1940-х годов.</p>
+                        <ul class="card-tags">
+                            <li>#1910</li>
+                            <li>#122 мм</li>
+                            <li>#Российская империя</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card" data-image="./artillery/BL 8-inch howitzer Mk VI–VIII.png">
+                    <div class="card-image">
+                        <img src="./artillery/BL 8-inch howitzer Mk VI–VIII.png" alt="Schneider CA1">
+                    </div>
+                    <div class="card-body">
+                        <h3>BL 8-inch howitzer Mk VI–VIII</h3>
+                        <p>Тяжёлая британская гаубица, применявшаяся для разрушения укреплений и бункеров. Обеспечивала огонь на дальность до 10 км.</p>
+                        <ul class="card-tags">
+                            <li>#1915</li>
+                            <li>#203 мм</li>
+                            <li>#Франция</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section" id="Ships">
+            <div class="section__header">
+                <h2>Корабли</h2>
+                <p>Лодки бля</p>
+            </div>
+            <div class="ships-showcase">
+                <article class="weapon-card ship-card" data-image="./ships/HMS%20Dreadnought.png">
+                    <div class="card-image">
+                        <img src="./ships/HMS%20Dreadnought.png" alt="Линкор HMS Dreadnought на ходовых испытаниях">
+                    </div>
+                    <div class="card-body">
+                        <h3>HMS Dreadnought</h3>
+                        <p>Первый дредноут Королевского флота объединил унифицированный главный калибр с паровыми турбинами и изменил баланс сил на море. Корабль сочетал скорость, простую огневую доктрину и броневую защиту, став символом британского превосходства.</p>
+                        <ul class="card-tags">
+                            <li>#Великобритания</li>
+                            <li>#10x305мм</li>
+                            <li>#21узел</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card ship-card" data-image="./ships/SMS König.png">
+                    <div class="card-image">
+                        <img src="./ships/SMS König.png" alt="Линкор SMS König в Северном море">
+                    </div>
+                    <div class="card-body">
+                        <h3>SMS König</h3>
+                        <p>Флагман флота открытого моря отличался устойчивой артиллерийской платформой и плотной броневой цитаделью, созданной для боя на Северном море. Манёвренность и отработанные расчёты позволяли вести сосредоточенный огонь даже в суровых штормовых условиях.</p>
+                        <ul class="card-tags">
+                            <li>#Германия</li>
+                            <li>#10x305мм</li>
+                            <li>#23узла</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="weapon-card ship-card" data-image="./ships/HMS%20Queen%20Elizabeth.png">
+                    <div class="card-image">
+                        <img src="./ships/HMS%20Queen%20Elizabeth.png" alt="HMS Queen Elizabeth и эскадра на рейде">
+                    </div>
+                    <div class="card-body">
+                        <h3>HMS Queen Elizabeth</h3>
+                        <p>Линкор типа Queen Elizabeth получил 381-миллиметровые орудия и нефтяные котлы, сдвинув стандарты линейных сил Антанты. Он сочетал дальность стрельбы, живучесть и скорость соединения, оставаясь ориентиром даже для русской «Императрицы Марии».</p>
+                        <ul class="card-tags">
+                            <li>#Великобритания</li>
+                            <li>#8x381мм</li>
+                            <li>#24узла</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Экспозиция «Оружие Великой войны». Источники иллюстраций — архивные фотографии.</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden>
+        <button class="lightbox__close" type="button" aria-label="Close gallery">×</button>
+        <figure class="lightbox__content">
+            <img id="lightbox-image" src="" alt="">
+            <figcaption>
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+                <ul id="lightbox-tags" class="card-tags"></ul>
+            </figcaption>
+        </figure>
+        <div class="lightbox__backdrop"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <button class="chat-launcher" type="button" data-chat-launcher aria-label="Open chat bot" aria-expanded="false">
+        <span class="chat-launcher__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 4.5c-4.694 0-8.5 3.14-8.5 7.012 0 3.872 3.806 7.012 8.5 7.012.552 0 1.093-.036 1.62-.106l3.51 1.914a.8.8 0 0 0 1.18-.702l-.03-3.006C20.11 15.28 20.5 13.92 20.5 11.512 20.5 7.64 16.694 4.5 12 4.5Zm-3.2 5.512a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Zm3.2 0a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Zm3.2 0a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z" />
+            </svg>
+        </span>
+    </button>
+    <script>
+      (function (w, d, s, o, f, js, fjs) {
+        w["botsonic_widget"] = o;
+        w[o] =
+          w[o] ||
+          function () {
+            (w[o].q = w[o].q || []).push(arguments);
+          };
+        (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+        js.id = o;
+        js.src = f;
+        js.async = 1;
+        fjs.parentNode.insertBefore(js, fjs);
+      })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
+      Botsonic("init", {
+        serviceBaseUrl: "https://api-bot.writesonic.com",
+        token: "8385fc49-8618-4052-a09f-48b4da08363b",
+      });
+      const setupChatLauncher = () => {
+        const launcher = document.querySelector("[data-chat-launcher]");
+        if (!launcher) return;
+        launcher.addEventListener("click", () => {
+          try {
+            Botsonic("open");
+            launcher.setAttribute("aria-expanded", "true");
+          } catch (error) {
+            console.error("Botsonic open error:", error);
+          }
+        });
+        window.addEventListener("message", (event) => {
+          const payload =
+            typeof event.data === "string"
+              ? event.data
+              : typeof event.data === "object" && event.data
+              ? event.data.type || event.data.event
+              : null;
+          if (!payload || typeof payload !== "string") return;
+          const normalized = payload.toLowerCase();
+          if (normalized.includes("botsonic") && normalized.includes("close")) {
+            launcher.setAttribute("aria-expanded", "false");
+          }
+        });
+      };
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", setupChatLauncher, { once: true });
+      } else {
+        setupChatLauncher();
+      }
+    </script>
+</body>
+</html>
+
+
+
+

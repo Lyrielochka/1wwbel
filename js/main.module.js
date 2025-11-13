@@ -14,6 +14,7 @@ import { initParticles } from './particles.js';
 import { initNav } from './nav.js';
 import { initMap } from './map.js';
 import { initThemeToggle } from './theme-toggle.js';
+import { initValeraAssistant } from './assistant.js';
 
 async function run(){
   document.documentElement.classList.add('js');
@@ -31,6 +32,7 @@ async function run(){
     initMap();
     initGlossary({ url: 'data/glossary.json', fallbackData: glossaryFallback });
     initHeroes({ url: 'data/heroes.json', fallbackData: heroesFallback });
+    initValeraAssistant();
   }catch(err){
     console.error('[init error]', err);
     document.documentElement.classList.remove('js');

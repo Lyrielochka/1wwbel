@@ -1084,3 +1084,270 @@ html.no-js .reveal{ opacity:1 !important; transform:none !important }
     .map__legend{ right:12px; bottom:12px; align-items:stretch; max-width:94vw; }
     .map__legend-panel{ width:100%; max-width:100%; }
   }
+
+/* ------------ Валера, интерактивный помощник ------------ */
+.valera-assistant{
+  position:fixed;
+  right:16px;
+  bottom:12px;
+  width:min(360px, calc(100% - 32px));
+  z-index:1300;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:10px;
+  pointer-events:none;
+}
+
+.valera-assistant > *{
+  pointer-events:auto;
+}
+
+.valera-launcher{
+  align-self:flex-end;
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  border:none;
+  background:rgba(0,0,0,.75);
+  box-shadow:0 8px 20px rgba(0,0,0,.4);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  position:relative;
+  transition:transform .2s ease, box-shadow .2s ease;
+  animation:valeraBlink 2.8s infinite;
+}
+
+.valera-launcher img{
+  width:40px;
+  height:40px;
+  object-fit:contain;
+  pointer-events:none;
+}
+
+.valera-launcher__pulse{
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.4);
+  animation:valeraPulse 2.8s infinite;
+}
+
+.valera-launcher:focus-visible{
+  outline:3px solid var(--accent, #c24b4d);
+  outline-offset:3px;
+}
+
+.valera-launcher:hover{
+  transform:translateY(-1px) scale(1.02);
+  box-shadow:0 12px 24px rgba(0,0,0,.45);
+}
+
+.valera-panel{
+  width:100%;
+  order:-1;
+  margin-bottom:8px;
+  background:rgba(14,14,14,.94);
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 24px 60px rgba(0,0,0,.5);
+  padding:24px;
+  border:1px solid rgba(255,255,255,.1);
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(8px);
+  transition:opacity .25s ease, transform .25s ease;
+  backdrop-filter:blur(12px);
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  max-height:min(90vh, 640px);
+  min-height:400px;
+}
+
+.valera-assistant.is-open .valera-panel{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+.valera-assistant.is-open .valera-launcher{
+  animation:none;
+}
+
+.valera-header{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.valera-header__text{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.valera-name{
+  margin:0;
+  font-weight:700;
+  font-size:1rem;
+  letter-spacing:.02em;
+}
+
+.valera-status{
+  margin:0;
+  font-size:.82rem;
+  opacity:.7;
+}
+
+.valera-avatar{
+  width:56px;
+  height:56px;
+  border-radius:14px;
+  object-fit:cover;
+  border:2px solid rgba(255,255,255,.2);
+  background:#1f1f1f;
+}
+
+.valera-close{
+  margin-left:auto;
+  border:none;
+  background:transparent;
+  color:inherit;
+  font-size:1.4rem;
+  cursor:pointer;
+}
+
+.valera-chat{
+  flex:1;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding-right:4px;
+  min-height:260px;
+}
+
+.valera-message{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.valera-message__bubble{
+  padding:10px 14px;
+  border-radius:16px;
+  font-size:.98rem;
+  line-height:1.4;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.valera-message--valera{
+  align-items:flex-start;
+}
+
+.valera-message--valera .valera-message__bubble{
+  border-top-left-radius:4px;
+  background:rgba(255,255,255,.08);
+}
+
+.valera-message--user{
+  align-items:flex-end;
+}
+
+.valera-message--user .valera-message__bubble{
+  border-top-right-radius:4px;
+  background:linear-gradient(135deg, #c24b4d, #dd7f3d);
+  border:none;
+}
+
+.valera-message--options .valera-message__bubble{
+  width:100%;
+  padding:0;
+  background:transparent;
+  border:none;
+}
+
+.valera-message--options .valera-options{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding:8px 0 0;
+}
+
+.valera-options{
+  display:grid;
+  gap:10px;
+  grid-template-columns:1fr;
+}
+
+.valera-option{
+  border-radius:12px;
+  padding:10px 12px;
+  text-align:left;
+  border:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.03);
+  color:inherit;
+  cursor:pointer;
+  transition:border-color .2s ease, background .2s ease, transform .15s ease;
+}
+
+.valera-option:hover{
+  transform:translateX(2px);
+  border-color:rgba(255,255,255,.4);
+}
+
+.valera-option:disabled{
+  opacity:.6;
+  cursor:not-allowed;
+}
+
+.valera-option--correct{
+  border-color:#65db8d;
+  background:rgba(101,219,141,.12);
+}
+
+.valera-option--wrong{
+  border-color:#ff6b6b;
+  background:rgba(255,107,107,.12);
+}
+
+.valera-visually-hidden{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  border:0;
+}
+
+@keyframes valeraPulse{
+  0%{ transform:scale(1); opacity:.9; }
+  50%{ transform:scale(1.25); opacity:0; }
+  100%{ transform:scale(1.6); opacity:0; }
+}
+
+@keyframes valeraBlink{
+  0%,80%,100%{ box-shadow:0 8px 20px rgba(0,0,0,.35); }
+  40%{ box-shadow:0 10px 24px rgba(0,0,0,.55); }
+}
+
+@media (max-width:640px){
+  .valera-assistant{
+    right:12px;
+    bottom:8px;
+    width:calc(100% - 24px);
+  }
+
+  .valera-panel{
+    max-height:80vh;
+    min-height:340px;
+    margin-bottom:6px;
+  }
+}

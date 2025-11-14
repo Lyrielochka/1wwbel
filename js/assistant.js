@@ -78,10 +78,10 @@ export function initValeraAssistant(){
 
   const updateAvatar = mood => {
     if(mood === 'sad'){
-      avatar.src = 'sad.png';
+      avatar.src = 'sad.webp';
       avatar.alt = 'Валера грустит';
     }else{
-      avatar.src = 'Fun.png';
+      avatar.src = 'Fun.webp';
       avatar.alt = 'Валера улыбается';
     }
   };

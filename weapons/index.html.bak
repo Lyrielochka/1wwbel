@@ -48,9 +48,9 @@
                 <p>Основное оружие пехоты, сформировавшее образ войны в окопах и на позициях.</p>
             </div>
             <div class="grid">
-                <article class="weapon-card" data-image="./shots/Arisaka Type 38.png">
+                <article class="weapon-card" data-image="./shots/Arisaka Type 38.webp">
                     <div class="card-image">
-                        <img src="./shots/Arisaka Type 38.png" alt="Arisaka Type 38">
+                        <img src="./shots/Arisaka Type 38.webp" alt="Arisaka Type 38">
                     </div>
                     <div class="card-body">
                         <h3>Arisaka Type 38</h3>
@@ -62,9 +62,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./shots/Gewehr 98.png">
+                <article class="weapon-card" data-image="./shots/Gewehr 98.webp">
                     <div class="card-image">
-                        <img src="./shots/Gewehr 98.png" alt="Gewehr 98">
+                        <img src="./shots/Gewehr 98.webp" alt="Gewehr 98">
                     </div>
                     <div class="card-body">
                         <h3>Gewehr 98</h3>
@@ -76,9 +76,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./shots/Karabiner 98a (Kar 98AZ)..png">
+                <article class="weapon-card" data-image="./shots/Karabiner 98a (Kar 98AZ)..webp">
                     <div class="card-image">
-                        <img src="./shots/Karabiner 98a (Kar 98AZ)..png" alt="Karabiner 98a (Kar 98AZ)">
+                        <img src="./shots/Karabiner 98a (Kar 98AZ)..webp" alt="Karabiner 98a (Kar 98AZ)">
                     </div>
                     <div class="card-body">
                         <h3>Karabiner 98a (Kar 98AZ)</h3>
@@ -90,9 +90,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./shots/Lebel M1886.png">
+                <article class="weapon-card" data-image="./shots/Lebel M1886.webp">
                     <div class="card-image">
-                        <img src="./shots/Lebel M1886.png" alt="Lebel M1886">
+                        <img src="./shots/Lebel M1886.webp" alt="Lebel M1886">
                     </div>
                     <div class="card-body">
                         <h3>Lebel M1886</h3>
@@ -104,9 +104,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./shots/Lee-Enfield Mk III (SMLE).png">
+                <article class="weapon-card" data-image="./shots/Lee-Enfield Mk III (SMLE).webp">
                     <div class="card-image">
-                        <img src="./shots/Lee–Enfield Mk III (SMLE).png" alt="Lee-Enfield Mk III (SMLE)">
+                        <img src="./shots/Lee–Enfield Mk III (SMLE).webp" alt="Lee-Enfield Mk III (SMLE)">
                     </div>
                     <div class="card-body">
                         <h3>Lee-Enfield Mk III (SMLE)</h3>
@@ -118,9 +118,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./shots/mosin.png">
+                <article class="weapon-card" data-image="./shots/mosin.webp">
                     <div class="card-image">
-                        <img src="./shots/mosin.png" alt="mosin">
+                        <img src="./shots/mosin.webp" alt="mosin">
                     </div>
                     <div class="card-body">
                         <h3>mosin</h3>
@@ -132,9 +132,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./shots/Springfield M1903.png">
+                <article class="weapon-card" data-image="./shots/Springfield M1903.webp">
                     <div class="card-image">
-                        <img src="./shots/Springfield M1903.png" alt="Springfield M1903">
+                        <img src="./shots/Springfield M1903.webp" alt="Springfield M1903">
                     </div>
                     <div class="card-body">
                         <h3>Springfield M1903</h3>
@@ -155,9 +155,9 @@
                 <p>Компактное оружие офицеров и экипажей, рассчитанное на ближний бой.</p>
             </div>
             <div class="grid">
-                <article class="weapon-card" data-image="./gun/Colt M1911A1.png">
+                <article class="weapon-card" data-image="./gun/Colt M1911A1.webp">
                     <div class="card-image">
-                        <img src="./gun/Colt M1911A1.png" alt="Colt M1911A1">
+                        <img src="./gun/Colt M1911A1.webp" alt="Colt M1911A1">
                     </div>
                     <div class="card-body">
                         <h3>Colt M1911A1</h3>
@@ -169,9 +169,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./gun/FN M1900.png">
+                <article class="weapon-card" data-image="./gun/FN M1900.webp">
                     <div class="card-image">
-                        <img src="./gun/FN M1900.png" alt="FN M1900">
+                        <img src="./gun/FN M1900.webp" alt="FN M1900">
                     </div>
                     <div class="card-body">
                         <h3>FN M1900</h3>
@@ -183,9 +183,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./gun/Luger P08.png">
+                <article class="weapon-card" data-image="./gun/Luger P08.webp">
                     <div class="card-image">
-                        <img src="./gun/Luger P08.png" alt="Luger P08">
+                        <img src="./gun/Luger P08.webp" alt="Luger P08">
                     </div>
                     <div class="card-body">
                         <h3>Luger P08</h3>
@@ -197,9 +197,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./gun/Mauser C96.png">
+                <article class="weapon-card" data-image="./gun/Mauser C96.webp">
                     <div class="card-image">
-                        <img src="./gun/Mauser C96.png" alt="Mauser C96">
+                        <img src="./gun/Mauser C96.webp" alt="Mauser C96">
                     </div>
                     <div class="card-body">
                         <h3>Mauser C96</h3>
@@ -211,9 +211,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./gun/Nagant M1895.png">
+                <article class="weapon-card" data-image="./gun/Nagant M1895.webp">
                     <div class="card-image">
-                        <img src="./gun/Nagant M1895.png" alt="Nagant M1895">
+                        <img src="./gun/Nagant M1895.webp" alt="Nagant M1895">
                     </div>
                     <div class="card-body">
                         <h3>Nagant M1895</h3>
@@ -225,9 +225,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./gun/Roth-Steyr M1907.png">
+                <article class="weapon-card" data-image="./gun/Roth-Steyr M1907.webp">
                     <div class="card-image">
-                        <img src="./gun/Roth–Steyr M1907.png" alt="Roth-Steyr M1907">
+                        <img src="./gun/Roth–Steyr M1907.webp" alt="Roth-Steyr M1907">
                     </div>
                     <div class="card-body">
                         <h3>Roth-Steyr M1907</h3>
@@ -239,9 +239,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./gun/Ruby.png">
+                <article class="weapon-card" data-image="./gun/Ruby.webp">
                     <div class="card-image">
-                        <img src="./gun/Ruby.png" alt="Ruby">
+                        <img src="./gun/Ruby.webp" alt="Ruby">
                     </div>
                     <div class="card-body">
                         <h3>Ruby</h3>
@@ -253,9 +253,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./gun/Webley Mk VI.png">
+                <article class="weapon-card" data-image="./gun/Webley Mk VI.webp">
                     <div class="card-image">
-                        <img src="./gun/Webley Mk VI.png" alt="Webley Mk VI">
+                        <img src="./gun/Webley Mk VI.webp" alt="Webley Mk VI">
                     </div>
                     <div class="card-body">
                         <h3>Webley Mk VI</h3>
@@ -276,9 +276,9 @@
                 <p>Средства создания непрерывного огня, изменившие взгляд на наступление.</p>
             </div>
             <div class="grid">
-                <article class="weapon-card" data-image="./machinegun/Chauchat (CSRG).png">
+                <article class="weapon-card" data-image="./machinegun/Chauchat (CSRG).webp">
                     <div class="card-image">
-                        <img src="./machinegun/Chauchat (CSRG).png" alt="Chauchat (CSRG)">
+                        <img src="./machinegun/Chauchat (CSRG).webp" alt="Chauchat (CSRG)">
                     </div>
                     <div class="card-body">
                         <h3>Chauchat (CSRG)</h3>
@@ -290,9 +290,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./machinegun/Colt-Browning M1895.png">
+                <article class="weapon-card" data-image="./machinegun/Colt-Browning M1895.webp">
                     <div class="card-image">
-                        <img src="./machinegun/Colt–Browning M1895.png" alt="Colt-Browning M1895">
+                        <img src="./machinegun/Colt–Browning M1895.webp" alt="Colt-Browning M1895">
                     </div>
                     <div class="card-body">
                         <h3>Colt-Browning M1895</h3>
@@ -304,9 +304,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./machinegun/Hotchkiss M1914.png">
+                <article class="weapon-card" data-image="./machinegun/Hotchkiss M1914.webp">
                     <div class="card-image">
-                        <img src="./machinegun/Hotchkiss M1914.png" alt="Hotchkiss M1914">
+                        <img src="./machinegun/Hotchkiss M1914.webp" alt="Hotchkiss M1914">
                     </div>
                     <div class="card-body">
                         <h3>Hotchkiss M1914</h3>
@@ -318,9 +318,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./machinegun/Lewis Gun.png">
+                <article class="weapon-card" data-image="./machinegun/Lewis Gun.webp">
                     <div class="card-image">
-                        <img src="./machinegun/Lewis Gun.png" alt="Lewis Gun">
+                        <img src="./machinegun/Lewis Gun.webp" alt="Lewis Gun">
                     </div>
                     <div class="card-body">
                         <h3>Lewis Gun</h3>
@@ -332,9 +332,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./machinegun/Maxim.png">
+                <article class="weapon-card" data-image="./machinegun/Maxim.webp">
                     <div class="card-image">
-                        <img src="./machinegun/Maxim.png" alt="Maxim">
+                        <img src="./machinegun/Maxim.webp" alt="Maxim">
                     </div>
                     <div class="card-body">
                         <h3>Maxim</h3>
@@ -346,9 +346,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./machinegun/MG 08.png">
+                <article class="weapon-card" data-image="./machinegun/MG 08.webp">
                     <div class="card-image">
-                        <img src="./machinegun/MG 08.png" alt="MG 08">
+                        <img src="./machinegun/MG 08.webp" alt="MG 08">
                     </div>
                     <div class="card-body">
                         <h3>MG 08</h3>
@@ -360,9 +360,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./machinegun/Schwarzlose M0712.png">
+                <article class="weapon-card" data-image="./machinegun/Schwarzlose M0712.webp">
                     <div class="card-image">
-                        <img src="./machinegun/Schwarzlose M0712.png" alt="Schwarzlose M0712">
+                        <img src="./machinegun/Schwarzlose M0712.webp" alt="Schwarzlose M0712">
                     </div>
                     <div class="card-body">
                         <h3>Schwarzlose M0712</h3>
@@ -374,9 +374,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./machinegun/vickers.png">
+                <article class="weapon-card" data-image="./machinegun/vickers.webp">
                     <div class="card-image">
-                        <img src="./machinegun/vickers.png" alt="vickers">
+                        <img src="./machinegun/vickers.webp" alt="vickers">
                     </div>
                     <div class="card-body">
                         <h3>vickers</h3>
@@ -397,9 +397,9 @@
                 <p>Первые бронемашины, призванные прорвать позиционный тупик окопной войны.</p>
             </div>
             <div class="grid">
-                <article class="weapon-card" data-image="./tanks/A7V.png">
+                <article class="weapon-card" data-image="./tanks/A7V.webp">
                     <div class="card-image">
-                        <img src="./tanks/A7V.png" alt="A7V">
+                        <img src="./tanks/A7V.webp" alt="A7V">
                     </div>
                     <div class="card-body">
                         <h3>A7V</h3>
@@ -411,9 +411,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./tanks/Mark I.png">
+                <article class="weapon-card" data-image="./tanks/Mark I.webp">
                     <div class="card-image">
-                        <img src="./tanks/Mark I.png" alt="Mark I">
+                        <img src="./tanks/Mark I.webp" alt="Mark I">
                     </div>
                     <div class="card-body">
                         <h3>Mark I</h3>
@@ -425,9 +425,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./tanks/Mark IV.png">
+                <article class="weapon-card" data-image="./tanks/Mark IV.webp">
                     <div class="card-image">
-                        <img src="./tanks/Mark IV.png" alt="Mark IV">
+                        <img src="./tanks/Mark IV.webp" alt="Mark IV">
                     </div>
                     <div class="card-body">
                         <h3>Mark IV</h3>
@@ -439,9 +439,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./tanks/Mark V.png">
+                <article class="weapon-card" data-image="./tanks/Mark V.webp">
                     <div class="card-image">
-                        <img src="./tanks/Mark V.png" alt="Mark V">
+                        <img src="./tanks/Mark V.webp" alt="Mark V">
                     </div>
                     <div class="card-body">
                         <h3>Mark V</h3>
@@ -453,9 +453,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./tanks/Renault FT.png">
+                <article class="weapon-card" data-image="./tanks/Renault FT.webp">
                     <div class="card-image">
-                        <img src="./tanks/Renault FT.png" alt="Renault FT">
+                        <img src="./tanks/Renault FT.webp" alt="Renault FT">
                     </div>
                     <div class="card-body">
                         <h3>Renault FT</h3>
@@ -467,9 +467,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./tanks/Saint-Chamond.png">
+                <article class="weapon-card" data-image="./tanks/Saint-Chamond.webp">
                     <div class="card-image">
-                        <img src="./tanks/Saint-Chamond.png" alt="Saint-Chamond">
+                        <img src="./tanks/Saint-Chamond.webp" alt="Saint-Chamond">
                     </div>
                     <div class="card-body">
                         <h3>Saint-Chamond</h3>
@@ -481,9 +481,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./tanks/Schneider CA1.png">
+                <article class="weapon-card" data-image="./tanks/Schneider CA1.webp">
                     <div class="card-image">
-                        <img src="./tanks/Schneider CA1.png" alt="Schneider CA1">
+                        <img src="./tanks/Schneider CA1.webp" alt="Schneider CA1">
                     </div>
                     <div class="card-body">
                         <h3>Schneider CA1</h3>
@@ -503,9 +503,9 @@
                 <p>Самолёты бля</p>
             </div>
             <div class="grid">
-                <article class="weapon-card" data-image="./airplane/Fokker Dr.I.png">
+                <article class="weapon-card" data-image="./airplane/Fokker Dr.I.webp">
                     <div class="card-image">
-                        <img src="./airplane/Fokker Dr.I.png" alt="Fokker Dr.I">
+                        <img src="./airplane/Fokker Dr.I.webp" alt="Fokker Dr.I">
                     </div>
                     <div class="card-body">
                         <h3>Fokker Dr.I</h3>
@@ -517,9 +517,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./airplane/Sopwith Camel.png">
+                <article class="weapon-card" data-image="./airplane/Sopwith Camel.webp">
                     <div class="card-image">
-                        <img src="./airplane/Sopwith Camel.png" alt="Sopwith Camel">
+                        <img src="./airplane/Sopwith Camel.webp" alt="Sopwith Camel">
                     </div>
                     <div class="card-body">
                         <h3>Sopwith Camel</h3>
@@ -531,9 +531,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./airplane/Airco DH.4.png">
+                <article class="weapon-card" data-image="./airplane/Airco DH.4.webp">
                     <div class="card-image">
-                        <img src="./airplane/Airco DH.4.png" alt="Airco DH.4">
+                        <img src="./airplane/Airco DH.4.webp" alt="Airco DH.4">
                     </div>
                     <div class="card-body">
                         <h3>Airco DH.4</h3>
@@ -545,9 +545,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./airplane/Voisin III.png">
+                <article class="weapon-card" data-image="./airplane/Voisin III.webp">
                     <div class="card-image">
-                        <img src="./airplane/Voisin III.png" alt="Voisin III">
+                        <img src="./airplane/Voisin III.webp" alt="Voisin III">
                     </div>
                     <div class="card-body">
                         <h3>Voisin III</h3>
@@ -559,9 +559,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./airplane/Morane-Saulnier Type L.png">
+                <article class="weapon-card" data-image="./airplane/Morane-Saulnier Type L.webp">
                     <div class="card-image">
-                        <img src="./airplane/Morane-Saulnier Type L.png" alt="Morane-Saulnier Type L">
+                        <img src="./airplane/Morane-Saulnier Type L.webp" alt="Morane-Saulnier Type L">
                     </div>
                     <div class="card-body">
                         <h3>Morane-Saulnier Type L</h3>
@@ -573,9 +573,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./airplane/Caproni Ca.3.png">
+                <article class="weapon-card" data-image="./airplane/Caproni Ca.3.webp">
                     <div class="card-image">
-                        <img src="./airplane/Caproni Ca.3.png" alt="Caproni Ca.3">
+                        <img src="./airplane/Caproni Ca.3.webp" alt="Caproni Ca.3">
                     </div>
                     <div class="card-body">
                         <h3>Caproni Ca.3</h3>
@@ -609,9 +609,9 @@
                 <p>Лодки бля</p>
             </div>
             <div class="grid">
-                <article class="weapon-card" data-image="./artillery/75.png">
+                <article class="weapon-card" data-image="./artillery/75.webp">
                     <div class="card-image">
-                        <img src="./artillery/75.png" alt="A7V">
+                        <img src="./artillery/75.webp" alt="A7V">
                     </div>
                     <div class="card-body">
                         <h3>75-мм пушка образца 1897 года</h3>
@@ -623,9 +623,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./artillery/8,8 cm SK.png">
+                <article class="weapon-card" data-image="./artillery/8,8 cm SK.webp">
                     <div class="card-image">
-                        <img src="./artillery/8,8 cm SK.png" alt="Mark I">
+                        <img src="./artillery/8,8 cm SK.webp" alt="Mark I">
                     </div>
                     <div class="card-body">
                         <h3>8,8 cm SK L/45</h3>
@@ -637,9 +637,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./artillery/77-мм полевая пушка FK 96.png">
+                <article class="weapon-card" data-image="./artillery/77-мм полевая пушка FK 96.webp">
                     <div class="card-image">
-                        <img src="./artillery/77-мм полевая пушка FK 96.png" alt="Mark IV">
+                        <img src="./artillery/77-мм полевая пушка FK 96.webp" alt="Mark IV">
                     </div>
                     <div class="card-body">
                         <h3>77-мм полевая пушка FK 96</h3>
@@ -651,9 +651,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./artillery/105-мм лёгкая гаубица leFH.png">
+                <article class="weapon-card" data-image="./artillery/105-мм лёгкая гаубица leFH.webp">
                     <div class="card-image">
-                        <img src="./artillery/105-мм лёгкая гаубица leFH.png" alt="Mark V">
+                        <img src="./artillery/105-мм лёгкая гаубица leFH.webp" alt="Mark V">
                     </div>
                     <div class="card-body">
                         <h3>105-мм лёгкая гаубица leFH 98/09</h3>
@@ -665,9 +665,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./artillery/152-мм гаубица обр. 1909 г.png">
+                <article class="weapon-card" data-image="./artillery/152-мм гаубица обр. 1909 г.webp">
                     <div class="card-image">
-                        <img src="./artillery/152-мм гаубица обр. 1909 г.png" alt="Renault FT">
+                        <img src="./artillery/152-мм гаубица обр. 1909 г.webp" alt="Renault FT">
                     </div>
                     <div class="card-body">
                         <h3>152-мм гаубица обр. 1909 г.</h3>
@@ -679,9 +679,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./artillery/122-мм гаубица обр. 1910 г.png">
+                <article class="weapon-card" data-image="./artillery/122-мм гаубица обр. 1910 г.webp">
                     <div class="card-image">
-                        <img src="./artillery/122-мм гаубица обр. 1910 г.png" alt="Saint-Chamond">
+                        <img src="./artillery/122-мм гаубица обр. 1910 г.webp" alt="Saint-Chamond">
                     </div>
                     <div class="card-body">
                         <h3>122-мм гаубица обр. 1910 г.</h3>
@@ -693,9 +693,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card" data-image="./artillery/BL 8-inch howitzer Mk VI–VIII.png">
+                <article class="weapon-card" data-image="./artillery/BL 8-inch howitzer Mk VI–VIII.webp">
                     <div class="card-image">
-                        <img src="./artillery/BL 8-inch howitzer Mk VI–VIII.png" alt="Schneider CA1">
+                        <img src="./artillery/BL 8-inch howitzer Mk VI–VIII.webp" alt="Schneider CA1">
                     </div>
                     <div class="card-body">
                         <h3>BL 8-inch howitzer Mk VI–VIII</h3>
@@ -715,9 +715,9 @@
                 <p>Лодки бля</p>
             </div>
             <div class="ships-showcase">
-                <article class="weapon-card ship-card" data-image="./ships/HMS%20Dreadnought.png">
+                <article class="weapon-card ship-card" data-image="./ships/HMS%20Dreadnought.webp">
                     <div class="card-image">
-                        <img src="./ships/HMS%20Dreadnought.png" alt="Линкор HMS Dreadnought на ходовых испытаниях">
+                        <img src="./ships/HMS%20Dreadnought.webp" alt="Линкор HMS Dreadnought на ходовых испытаниях">
                     </div>
                     <div class="card-body">
                         <h3>HMS Dreadnought</h3>
@@ -729,9 +729,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card ship-card" data-image="./ships/SMS König.png">
+                <article class="weapon-card ship-card" data-image="./ships/SMS König.webp">
                     <div class="card-image">
-                        <img src="./ships/SMS König.png" alt="Линкор SMS König в Северном море">
+                        <img src="./ships/SMS König.webp" alt="Линкор SMS König в Северном море">
                     </div>
                     <div class="card-body">
                         <h3>SMS König</h3>
@@ -743,9 +743,9 @@
                         </ul>
                     </div>
                 </article>
-                <article class="weapon-card ship-card" data-image="./ships/HMS%20Queen%20Elizabeth.png">
+                <article class="weapon-card ship-card" data-image="./ships/HMS%20Queen%20Elizabeth.webp">
                     <div class="card-image">
-                        <img src="./ships/HMS%20Queen%20Elizabeth.png" alt="HMS Queen Elizabeth и эскадра на рейде">
+                        <img src="./ships/HMS%20Queen%20Elizabeth.webp" alt="HMS Queen Elizabeth и эскадра на рейде">
                     </div>
                     <div class="card-body">
                         <h3>HMS Queen Elizabeth</h3>

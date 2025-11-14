@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
   font-family: "Wremena";
   src: url("../Wremena-Bold.ttf") format("truetype");
   font-weight: 400;
@@ -78,7 +78,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: url("fon.jpg") center/cover no-repeat;
+  background: url("fon.webp") center/cover no-repeat;
   filter: none;
 }
 
@@ -298,7 +298,7 @@ h1 {
 }
 
 .cta::after {
-  content: "➔";
+  content: "вћ”";
   font-size: 1rem;
   transition: transform 0.4s ease;
 }
@@ -973,3 +973,4 @@ h1 {
     min-height: 220px;
   }
 }
+

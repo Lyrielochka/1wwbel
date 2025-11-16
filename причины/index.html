@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пламя Передела — причины Первой мировой войны</title>
+    <link rel="preload" href="../Wremena-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Wremena';
+            src: url('../Wremena-Bold.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Wremena';
+            src: url('../Wremena-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        :root {
+            --bg: #010805;
+            --bg-secondary: #03140d;
+            --panel: rgba(6, 18, 12, 0.78);
+            --border: rgba(145, 255, 182, 0.35);
+            --accent: #9be67b;
+            --accent-strong: #68ff95;
+            --text: #eafee1;
+            --muted: #9eb8a7;
+            --font-sans: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-serif: 'Cinzel', 'Wremena', 'Times New Roman', serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-sans);
+            background: radial-gradient(circle at top, #05140c 0%, #010804 55%, #000402 100%);
+            color: var(--text);
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            scroll-behavior: smooth;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-serif);
+            letter-spacing: 0.08em;
+            margin-top: 0;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .top-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 20;
+            padding: 0.8rem 5vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(1, 10, 5, 0.6);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(110, 211, 137, 0.2);
+            transition: background 0.4s ease, padding 0.4s ease;
+        }
+
+        .top-nav.scrolled {
+            background: rgba(1, 10, 5, 0.92);
+            padding: 0.5rem 5vw;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.1rem;
+            letter-spacing: 0.4em;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            padding: 0.4rem 0.9rem;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            transition: border 0.3s ease, color 0.3s ease, background 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            border-color: var(--border);
+            color: var(--accent-strong);
+            background: rgba(155, 230, 123, 0.1);
+        }
+
+        .back-floating {
+            position: fixed;
+            left: 2rem;
+            bottom: 2rem;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: rgba(2, 12, 6, 0.85);
+            color: var(--accent-strong);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            cursor: pointer;
+            z-index: 30;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+        }
+
+        .back-floating:hover {
+            background: rgba(9, 30, 18, 0.95);
+            transform: translateY(-2px) scale(1.03);
+        }
+
+        @media (max-width: 768px) {
+            .back-floating {
+                left: 1rem;
+                bottom: 1rem;
+                width: 50px;
+                height: 50px;
+                font-size: 1.4rem;
+            }
+        }
+
+        header.hero {
+            position: relative;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 0 6vw;
+        }
+
+        .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: none;
+            z-index: 0;
+        }
+
+        .hero-overlay {
+            position: relative;
+            z-index: 2;
+            max-width: 780px;
+            padding: 9rem 0 5rem;
+        }
+
+        .hero-tagline {
+            text-transform: uppercase;
+            letter-spacing: 0.6em;
+            font-size: 0.8rem;
+            color: var(--muted);
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.8rem, 6vw, 4.8rem);
+            margin-bottom: 1rem;
+            color: #f5ffe9;
+            text-shadow: 0 0 30px rgba(99, 255, 166, 0.35);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 620px;
+            color: #e1f7d2;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            padding: 1rem 1.2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+            background: rgba(5, 16, 11, 0.7);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 25px 60px rgba(3, 10, 6, 0.8);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .stat-card:nth-child(2) {
+            animation-delay: 1.4s;
+        }
+
+        .stat-card span {
+            display: block;
+            font-size: 2.4rem;
+            color: var(--accent-strong);
+            font-weight: 700;
+        }
+
+        .cta-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 0.9rem 2rem;
+            border-radius: 999px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            cursor: pointer;
+            background: transparent;
+            transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .btn.primary {
+            background: linear-gradient(120deg, rgba(100, 255, 149, 0.85), rgba(53, 179, 121, 0.85));
+            color: #051006;
+            box-shadow: 0 10px 25px rgba(105, 255, 149, 0.35);
+        }
+
+        .btn.primary:hover {
+            box-shadow: 0 15px 35px rgba(105, 255, 149, 0.5);
+        }
+
+        .btn.ghost:hover {
+            background: rgba(155, 230, 123, 0.1);
+            color: var(--accent-strong);
+        }
+
+        .ticker {
+            margin-top: -2rem;
+            padding: 0.8rem 0;
+            overflow: hidden;
+            border-top: 1px solid rgba(105, 255, 149, 0.15);
+            border-bottom: 1px solid rgba(105, 255, 149, 0.15);
+            background: rgba(2, 12, 7, 0.8);
+        }
+
+        .ticker-track {
+            display: flex;
+            gap: 4rem;
+            animation: marquee 26s linear infinite;
+            text-transform: uppercase;
+            letter-spacing: 0.35em;
+            font-size: 0.75rem;
+            color: var(--muted);
+            white-space: nowrap;
+            width: max-content;
+        }
+
+        main {
+            padding: 3rem 6vw 5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section {
+            margin: 3rem 0;
+        }
+
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: clamp(1.8rem, 3vw, 3rem);
+            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(12px);
+        }
+
+        .eyebrow {
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            color: var(--muted);
+            font-size: 0.78rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section h2 {
+            margin-bottom: 1.5rem;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+        }
+
+        .alliances {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        }
+
+        .alliance-card {
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(145, 230, 160, 0.25);
+            background: rgba(7, 19, 12, 0.85);
+            transition: transform 0.4s ease;
+        }
+
+        .alliance-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .alliance-card h3 {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-size: 1rem;
+        }
+
+        .alliance-card ul {
+            padding-left: 1.1rem;
+            margin: 0.5rem 0 0;
+            color: var(--muted);
+        }
+
+        .cause-grid {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+        .cause-card {
+            padding: 1.2rem 1.4rem;
+            border-radius: 18px;
+            border: 1px solid rgba(138, 255, 182, 0.18);
+            background: rgba(5, 13, 9, 0.95);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cause-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at top right, rgba(155, 230, 123, 0.12), transparent 45%);
+            mix-blend-mode: screen;
+            pointer-events: none;
+        }
+
+        .cause-card h3 {
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+            letter-spacing: 0.2em;
+            color: var(--accent-strong);
+            text-transform: uppercase;
+        }
+
+        .timeline {
+            margin-top: 2rem;
+            display: grid;
+            gap: 1.3rem;
+        }
+
+        .timeline-item {
+            display: grid;
+            gap: 0.5rem;
+            padding: 1.2rem 1.4rem;
+            border-left: 3px solid var(--accent);
+            background: rgba(4, 12, 8, 0.9);
+            border-radius: 16px 24px 24px 16px;
+        }
+
+        .timeline-item strong {
+            font-size: 1rem;
+            color: var(--accent-strong);
+            letter-spacing: 0.2em;
+        }
+
+        .fact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .fact-card {
+            padding: 1.2rem 1.4rem;
+            border-radius: 16px;
+            border: 1px solid rgba(114, 226, 163, 0.25);
+            background: rgba(7, 18, 11, 0.85);
+        }
+
+        .fact-card span {
+            font-size: 2rem;
+            color: var(--accent);
+            display: block;
+        }
+
+        .person-photo {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 0.8rem 0;
+            border: 1px solid var(--border);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .timeline-item .person-photo {
+            margin-top: 0.3rem;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .quote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            color: var(--muted);
+            font-style: italic;
+            margin-top: 1.5rem;
+        }
+
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .grid-cards article {
+            padding: 1rem 1.2rem;
+            border-radius: 14px;
+            border: 1px solid rgba(100, 214, 149, 0.2);
+            background: rgba(4, 11, 8, 0.95);
+        }
+
+        .footer {
+            padding: 2.5rem 6vw 3rem;
+            text-align: center;
+            color: var(--muted);
+            border-top: 1px solid rgba(100, 255, 149, 0.15);
+            background: rgba(1, 4, 2, 0.9);
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: rgba(7, 20, 13, 0.85);
+            color: var(--accent);
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            z-index: 30;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(35px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 960px) {
+            .top-nav {
+                flex-direction: column;
+                gap: 0.6rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-overlay {
+                padding-top: 7rem;
+            }
+
+            .cta-row {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-tagline {
+                letter-spacing: 0.4em;
+            }
+
+            .top-nav {
+                padding: 0.8rem 1.5rem;
+            }
+
+            main {
+                padding: 3rem 1.5rem 4rem;
+            }
+
+            header.hero {
+                padding: 0 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="logo">Пламя передела</div>
+        <div class="nav-links">
+            <a href="#alliances">Противники</a>
+            <a href="#causes">Причины</a>
+            <a href="#spark">Сараево</a>
+            <a href="#russia">Россия</a>
+            <a href="#strategy">Кампания</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <video class="bg-video" autoplay muted loop playsinline poster="">
+            <source src="fon2.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видеофон.
+        </video>
+        <div class="hero-overlay">
+            <span class="hero-tagline">1914—1918 • Истоки глобальной катастрофы</span>
+            <h1>ПЛАМЯ ПЕРЕДЕЛА</h1>
+            <p>Первая мировая война длилась с 1 августа 1914 по 11 ноября 1918 года. В конфликт были втянуты 38 государств
+                — это 62% населения планеты, и до сих пор события тех лет остаются неоднозначными и противоречиво описанными
+                в современной истории. Балканские страны, находившиеся под влиянием Англии, стали отправной точкой,
+                а Германия к тому моменту уже утратила там свои позиции.</p>
+            <div class="hero-stats">
+                <article class="stat-card">
+                    <span>38</span>
+                    государств участвовали в войне и определяли ее пример для всего мира.
+                </article>
+                <article class="stat-card">
+                    <span>62%</span>
+                    населения Земли оказалось вовлечено в орбиту боевых действий.
+                </article>
+                <article class="stat-card">
+                    <span>Балканы</span>
+                    стали узлом, где Англия и Германия боролись за влияние и подготовили почву для войны.
+                </article>
+            </div>
+            <div class="cta-row">
+            </div>
+        </div>
+    </header>
+
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+            <span>Россия и Германия потеряли убитыми 4,3 миллиона человек</span>
+            <span>Великобритания, Франция и Австро-Венгрия — 3,5 миллиона жизней</span>
+            <span>75% потерь Первой мировой нанесли артиллерийские удары</span>
+            <span>38 государств и 62% населения Земли — территория войны</span>
+        </div>
+    </div>
+
+    <main>
+        <section class="section panel reveal" id="alliances">
+            <p class="eyebrow">Противостоящие силы</p>
+            <h2>Два лагеря, рвущие континент на части</h2>
+            <p>Война развернулась между двумя коалициями. С одной стороны — Антанта, покровительствующая Сербии,
+                с другой — Тройственный союз, к которому позже присоединилось Болгарское царство, образовав Четверной союз.
+                Итальянский нейтралитет еще больше подчеркнул шаткость дипломатических связей.</p>
+            <div class="alliances">
+                <article class="alliance-card">
+                    <h3>Антанта</h3>
+                    <p>Опора на континенте и морское господство.</p>
+                    <ul>
+                        <li>Российская империя, Франция, Великобритания.</li>
+                        <li>Союзники: США, Италия (вышла из союза с Центральными державами), Румыния, Канада, Австралия, Новая Зеландия.</li>
+                    </ul>
+                </article>
+                <article class="alliance-card">
+                    <h3>Тройственный союз</h3>
+                    <p>Позже переросший в Четверной союз.</p>
+                    <ul>
+                        <li>Германия, Австро-Венгрия, Османская империя.</li>
+                        <li>1915: к ним присоединилось Болгарское царство.</li>
+                        <li>Ставка на молниеносную войну и давление на Балканы.</li>
+                    </ul>
+                </article>
+                <article class="alliance-card">
+                    <h3>Италия</h3>
+                    <p>Изначально член Тройственного союза, но после начала войны объявила о нейтралитете,
+                        не желая участвовать в конфликте против прежних партнеров.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section panel reveal" id="causes">
+            <p class="eyebrow">Паутина противоречий</p>
+            <h2>Почему Европа рванула к переделу мира</h2>
+            <p>Колониальная система к началу XX века рушилась, и ведущие державы больше не могли безнаказанно получать ресурсы
+                от зависимых территорий. Оставался лишь путь силового передела, и противоречия раздулись на каждом направлении.</p>
+            <div class="cause-grid">
+                <article class="cause-card">
+                    <h3>Англия vs Германия</h3>
+                    <p>Англия стремилась не допустить усиления влияния Германии на Балканах и сохранить морское господство.
+                        Германия, напротив, хотела укрепиться на Балканах и Ближнем Востоке, лишив Лондон монополии на море.</p>
+                </article>
+                <article class="cause-card">
+                    <h3>Германия vs Франция</h3>
+                    <p>Франция мечтала вернуть Эльзас и Лотарингию и заполучить Саарский угольный бассейн,
+                        утраченные после войны 1870–1871 годов. Реваншизм стал государственным курсом.</p>
+                </article>
+                <article class="cause-card">
+                    <h3>Германия vs Россия</h3>
+                    <p>Берлин намеревался вырвать у России Польшу, Украину и Прибалтику, ликвидировав ее влияние в Восточной Европе.</p>
+                </article>
+                <article class="cause-card">
+                    <h3>Россия vs Австро-Венгрия</h3>
+                    <p>Обе державы боролись за контроль над Балканами и проливами Босфор — Дарданеллы,
+                        что делало любое обострение смертельно опасным.</p>
+                </article>
+                <article class="cause-card">
+                    <h3>Болезненный фон</h3>
+                    <p>Большую роль сыграли балканские государства: они не были полностью самостоятельны
+                        и находились под давлением английской дипломатии, что послужило фитилем будущей катастрофы.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section panel reveal" id="spark">
+            <p class="eyebrow">Искра</p>
+            <h2>Сараево и цепь убийств, лишивших Европу мирного шанса</h2>
+            <div class="split">
+                <div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <strong>28 июня 1914</strong>
+                            <p>В Сараево Гаврило Принцип застрелил эрцгерцога Франца Фердинанда и герцогиню Софию.
+                                Террорист был частью группы из шести националистов, связанных Данилой Иличем.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <strong>10:10</strong>
+                            <p>На набережной Аппель в машину бросили гранату. Ошибка стоила жизни не Фердинанду,
+                                а двадцати людям из свиты и толпы. Позже по дороге из ратуши в госпиталь прозвучали смертельные выстрелы.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <strong>29 июня</strong>
+                            <p>Убит Жан Жорес — влиятельный французский политик, выступавший против войны.
+                                За несколько недель до того совершено покушение на Распутина, также убежденного противника войны.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="fact-grid">
+                        <article class="fact-card">
+                            <span>Гаврило Принцип</span>
+                            <img src="гаврило.jpg" alt="Гаврило Принцип" class="person-photo">
+                            умер в тюрьме в 1918 году от туберкулеза. Он пытался покончить с собой сразу после покушения, но был схвачен.
+                        </article>
+                        <article class="fact-card">
+                            <span>Посол Хартли</span>
+                            <img src="Gartvig_NG.jpg" alt="Посол Хартли" class="person-photo">
+                            умер в 1914 году прямо в посольстве Австрии в Сербии, а переписка послов Хартли и Созонова бесследно исчезла в 1917-м.
+                        </article>
+                        <article class="fact-card">
+                            <span>Полковник Апис</span>
+                            <img src="Dragutin_Dimitrijević-Apis,_ca._1900.jpg" alt="Полковник Апис" class="person-photo">
+                            руководитель «Черной руки», расстрелян в 1917 году. Судьба всех участников указывает на множество скрытых пятен.
+                        </article>
+                    </div>
+                    <p class="quote">Английская дипломатия убеждала Николая II не оставлять Сербию без поддержки, 
+                        а пресса одновременно оправдывала австро-венгерский ответ. Все делалось, чтобы Германия, Австро-Венгрия и Россия не уклонились от войны.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section panel reveal" id="diplomacy">
+            <p class="eyebrow">Закулисье</p>
+            <h2>Роль Англии и дипломатических маневров</h2>
+            <p>В «июльском кризисе» 1914 года Германия и Россия заняли выжидательную позицию: открыто воевать
+                при примерном равенстве сил никто не хотел. На передний план вышла английская дипломатия —
+                пресса убеждала немцев в нейтралитете Лондона, а официальные миссии внушали императору Николаю II обратное.</p>
+            <div class="grid-cards">
+                <article>
+                    <h3>Двойные сигналы</h3>
+                    <p>Англия намекала Германии на возможный нейтралитет, но России обещала поддержку. Одного публичного заявления
+                        о недопущении войны хватило бы, чтобы Европа не загорелась, но Лондон подталкивал всех к конфликту.</p>
+                </article>
+                <article>
+                    <h3>Сербия под прицелом</h3>
+                    <p>Австро-Венгрия сама не решилась бы атаковать Сербию, если бы Англия не создала атмосферу безнаказанности
+                        и не подогревала реваншистские настроения в прессе.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section panel reveal" id="russia">
+            <p class="eyebrow">Россия перед бурей</p>
+            <h2>Подготовка империи и роковые ошибки</h2>
+            <div class="split">
+                <div>
+                    <p>Россия провела масштабные реформы: в 1907 году обновила флот, в 1910 — сухопутные войска,
+                        а к 1912 приняла новый Устав полевой службы, поощрявший личную инициативу. Численность армии мирного времени
+                        выросла до двух миллионов человек, и доктрина была наступательной.</p>
+                    <div class="fact-grid">
+                        <article class="fact-card">
+                            <span>2 млн</span>
+                            военнослужащих насчитывала русская армия в мирное время после реформ.
+                        </article>
+                        <article class="fact-card">
+                            <span>75%</span>
+                            всех потерь Первой мировой нанесла артиллерия — недооцененная русским командованием.
+                        </article>
+                        <article class="fact-card">
+                            <span>4,3 млн</span>
+                            убитых званий России и Германии против 3,5 млн потерь Великобритании, Франции и Австро-Венгрии вместе взятых.
+                        </article>
+                    </div>
+                </div>
+                <div>
+                    <p>Несмотря на модернизацию, генералы катастрофически недооценили роль артиллерии,
+                        продолжая жить эпохой кавалерийских атак. Итог — подавляющее большинство потерь было вызвано именно артиллерийским огнем,
+                        что стало приговором для императорского генералитета.</p>
+                    <p class="quote">Страны, которые сильнее всего воевали и приложили больше усилий,
+                        оказались ни с чем: Россия подписала Брестский мир, теряя территории, а Германия — Версальский договор, утратив самостоятельность.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section panel reveal" id="strategy">
+            <p class="eyebrow">Стратегии и кампания</p>
+            <h2>От плана Шлиффена до позиционной войны</h2>
+            <div class="split">
+                <div>
+                    <h3>План Шлиффена</h3>
+                    <p>Германия стремилась разгромить Францию за 40 дней, пока Россия проводит мобилизацию.
+                        2 августа 1914 года был захвачен Люксембург, 4 августа немецкие войска вторглись в нейтральную Бельгию,
+                        а к 20 августа подошли к французским границам. 5 сентября у реки Марна две миллиона солдат остановили наступление,
+                        и блицкриг провалился.</p>
+                    <ul>
+                        <li>Москва и Берлин готовились к войне на два фронта — восточном и западном.</li>
+                        <li>После Марны война перешла в позиционную стадию.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Итоги кампаний</h3>
+                    <p><strong>1914 год:</strong></p>
+                    <ul>
+                        <li>План молниеносной войны сорван.</li>
+                        <li>Ни одна сторона не добилась решающего преимущества.</li>
+                    </ul>
+                    <p><strong>1916 год:</strong></p>
+                    <ul>
+                        <li>Стратегическая инициатива переходит к Антанте.</li>
+                        <li>Верденская крепость устояла благодаря наступлению русской армии.</li>
+                        <li>Румыния вступает в войну на стороне Антанты.</li>
+                        <li>Россия проводит Брусиловский прорыв — мощнейшее наступление кампании.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <footer class="footer">
+       Проект о Первой мировой на землях Беларуси • Создано с любовью и болью • © Урицкая средняя школа,2025 г.
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Вернуться к началу">↑</button>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        reveals.forEach(el => observer.observe(el));
+
+        const nav = document.querySelector('.top-nav');
+        const scrollBtn = document.querySelector('.scroll-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 400) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <button class="back-floating" type="button" onclick="history.back()" aria-label="Назад">&larr;</button>
+</body>
+
+</html>

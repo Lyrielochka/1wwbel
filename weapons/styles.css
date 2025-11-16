@@ -40,6 +40,39 @@ body {
     isolation: isolate;
 }
 
+.back-button {
+    position: fixed;
+    left: clamp(12px, 4vw, 28px);
+    bottom: clamp(16px, 5vw, 32px);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Wremena','Times New Roman',serif;
+    color: var(--text-primary);
+    background: rgba(7, 18, 14, 0.92);
+    border: 1px solid var(--border-highlight);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    z-index: 50;
+}
+
+.back-button:hover,
+.back-button:focus-visible {
+    transform: translateY(-3px);
+    background: var(--border-highlight);
+    color: #041107;
+    border-color: transparent;
+    box-shadow: 0 18px 38px rgba(95, 186, 126, 0.35);
+    outline: none;
+}
+
 body.no-scroll {
     overflow: hidden;
 }

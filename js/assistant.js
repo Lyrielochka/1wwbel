@@ -1,53 +1,161 @@
 const quizQuestions = [
   {
-    question: 'На каком участке Восточного фронта произошла «Атака мёртвецов»?',
-    answers: ['Брусиловский прорыв', 'Осовецкая крепость', 'Перемышль', 'Карпатский хребет'],
-    correct: 1
-  },
-  {
-    question: 'Что стало главной целью немецко-австро-венгерского Горлицкого прорыва в 1915 году?',
-    answers: [
-      'Взятие Петрограда',
-      'Прорвать российскую оборону в Польше и Галиции',
-      'Блокировать Балтику',
-      'Высадить десант в Риге'
-    ],
-    correct: 1
-  },
-  {
-    question: 'Кто возглавил Брусиловский прорыв летом 1916 года?',
-    answers: ['А. А. Брусилов', 'Н. И. Иванов', 'П. Н. Врангель', 'Л. Г. Корнилов'],
-    correct: 0
-  },
-  {
-    question: 'Какая армия была основным противником Российской империи на Северо-Западном фронте?',
-    answers: ['Итальянская армия', 'Османская армия', 'Германская армия', 'Болгарская армия'],
+    question: 'На какой реке стояла крепость Осовец?',
+    answers: ['Висла', 'Нарев', 'Бебжа', 'Неман'],
     correct: 2
   },
   {
-    question: 'Какой фактор сильнее всего ослабил российскую армию к 1917 году на Восточном фронте?',
-    answers: [
-      'Отсутствие кавалерии',
-      'Затянувшиеся боевые действия и дефицит снабжения',
-      'Нехватка артиллерийских офицеров',
-      'Суровая зима 1914/1915 гг.'
-    ],
+    question: 'Как называлась контратака защитников после газового удара 6 августа 1915 года?',
+    answers: ['Брусиловский прорыв', 'Атака мертвецов', 'Чудо на Висле', 'Оборона Перемышля'],
+    correct: 1
+  },
+  {
+    question: 'Какой газ немцы применили под Осовцом в 1915 году?',
+    answers: ['Хлор', 'Иприт', 'Зарин', 'Аммиак'],
+    correct: 0
+  },
+  {
+    question: 'Как защитники пытались смягчить действие газа во время атаки?',
+    answers: ['Фильтрующие противогазы Зелинского-Кумманта', 'Влажные бинты с содой', 'Противогазы с активированным углём', 'Никак'],
+    correct: 1
+  },
+  {
+    question: 'С какой стороны велось главное наступление на крепость летом 1915 года?',
+    answers: ['С запада', 'С востока', 'С севера', 'С юга'],
+    correct: 0
+  },
+  {
+    question: 'Сколько линий обороны имел Осовец к 1915 году?',
+    answers: ['1', '2', '3', '4'],
+    correct: 3
+  },
+  {
+    question: 'На каком фронте находилась крепость Осовец?',
+    answers: ['Северо-Западный фронт', 'Кавказский фронт', 'Юго-Западный фронт', 'Северный фронт'],
+    correct: 0
+  },
+  {
+    question: 'В каком году началась Первая мировая война?',
+    answers: ['1912', '1914', '1916', '1918'],
+    correct: 1
+  },
+  {
+    question: 'В каком году США вступили в войну?',
+    answers: ['1914', '1915', '1916', '1917'],
+    correct: 3
+  },
+  {
+    question: 'Какая страна НЕ входила в Антанту?',
+    answers: ['Франция', 'Великобритания', 'Германия', 'Россия'],
+    correct: 2
+  },
+  {
+    question: 'К какой коалиции относилась Османская империя?',
+    answers: ['Антанта', 'Центральные державы', 'Нейтралитет', 'Балканская лига'],
+    correct: 1
+  },
+  {
+    question: 'Как назывался немецкий план войны на два фронта?',
+    answers: ['План Барбаросса', 'План Шлиффена', 'План Дюка', 'План Гинденбурга'],
+    correct: 1
+  },
+  {
+    question: 'Где впервые массово применили танки?',
+    answers: ['Верден', 'Марна', 'Сомма', 'Камбре'],
+    correct: 2
+  },
+  {
+    question: 'Какое наступление русской армии в 1916 году стало самым успешным?',
+    answers: ['Рижская операция', 'Брусиловский прорыв', 'Нарочская операция', 'Восточно-Прусская операция'],
+    correct: 1
+  },
+  {
+    question: 'Какую артсистему союзники называли «Большая Берта»?',
+    answers: ['420-мм мортира Krupp', '76-мм полевая пушка', '152-мм гаубица', '305-мм мортира Skoda'],
+    correct: 0
+  },
+  {
+    question: 'В каком месяце 1918 года подписано Компьенское перемирие?',
+    answers: ['Июль', 'Сентябрь', 'Ноябрь', 'Декабрь'],
+    correct: 2
+  },
+  {
+    question: 'Где было совершено убийство эрцгерцога Франца Фердинанда?',
+    answers: ['Вена', 'Сараево', 'Белград', 'Бухарест'],
+    correct: 1
+  },
+  {
+    question: 'Какая армия победила в битве при Танненберге в 1914 году?',
+    answers: ['Русская 2-я армия', 'Германская 8-я армия', 'Французская 5-я армия', 'Британские экспедиционные силы'],
+    correct: 1
+  },
+  {
+    question: 'Какой договор вывел Россию из войны?',
+    answers: ['Версальский договор', 'Брестский мир', 'Сан-Стефанский договор', 'Рапалльский договор'],
+    correct: 1
+  },
+  {
+    question: 'Какой истребитель стал символом «Красного Барона» Манфреда фон Рихтгофена?',
+    answers: ['Sopwith Camel', 'Nieuport 17', 'Fokker Dr.I', 'SPAD S.VII'],
+    correct: 2
+  },
+  {
+    question: 'Какая битва остановила германское наступление на Париж в 1914 году?',
+    answers: ['Битва на Марне', 'Битва при Марселе', 'Битва при Лондоне', 'Битва при Берлине'],
+    correct: 0
+  },
+  {
+    question: 'Какое сражение стало символом позиционной войны на Западе в 1916 году?',
+    answers: ['Верден', 'Галиция', 'Лодзь', 'Ютландия'],
+    correct: 0
+  },
+  {
+    question: 'Какой морской бой был крупнейшим в Первой мировой?',
+    answers: ['Цусима', 'Ютландский бой', 'Доггер-банка', 'Мидуэй'],
+    correct: 1
+  },
+  {
+    question: 'Когда была проведена эвакуация гарнизона Осовца?',
+    answers: ['Март 1915', 'Июль 1915', 'Ноябрь 1915', 'Март 1916'],
+    correct: 1
+  },
+  {
+    question: 'Сколько примерно длилась оборона Осовца?',
+    answers: ['3 месяца', '6 месяцев', '11 месяцев', '18 месяцев'],
+    correct: 2
+  },
+  {
+    question: 'Кто был верховным главнокомандующим русской армии в начале войны?',
+    answers: ['А. А. Брусилов', 'Великий князь Николай Николаевич', 'Николай II', 'М. В. Алексеев'],
     correct: 1
   }
 ];
 
 const positiveReplies = [
-  'Отлично! Ты держишь курс на победу.',
-  'Верно! Восточный фронт тобой гордится.',
-  'Класс! Видно, что историю ты знаешь.',
-  'Супер! Такой ответ бы одобрил сам штаб.'
+  'Верно! Ты держишь темп.',
+  'Есть попадание — молодец!',
+  'Отлично, точное знание!',
+  'Красиво ответил, так держать.',
+  'Супер, ты в теме.',
+  'Да! Идём дальше по горячим следам.'
 ];
 
 const negativeReplies = [
-  'Иди подумай ещё!',
-  'Не сдавайся, попробуй другой вариант.',
-  'Неточно. Перечитай хронику и вперёд.',
-  'Пока мимо. Сконцентрируйся ещё раз.'
+  'Не совсем так. Но дальше будет лучше!',
+  'Мимо, попробуем другой ракурс.',
+  'Чуть-чуть не то — не сдаёмся.',
+  'Ошибки — часть тренировки, поехали дальше.',
+  'Упс, не попали. Возьмём следующий вопрос.',
+  'Почти! Сейчас разгонимся.'
+];
+
+const funFacts = [
+  'Гарнизон Осовца держался почти 11 месяцев под огнём осадной артиллерии.',
+  'Немцы подтянули к крепости 420-мм орудия, но быстро разрушить её не смогли.',
+  'После газовой атаки 6 августа 1915-го защитники шли в контратаку в бинтах и с баграми.',
+  'Крепость контролировала важный железнодорожный узел к Гродно и Белостоку.',
+  'В 1916 году началась массовая выдача фильтрующих противогазов, но под Осовцом их ещё не было.',
+  'Ютландский бой стал единственным генеральным сражением дредноутов в войне.'
 ];
 
 export function initValeraAssistant(){
@@ -59,36 +167,41 @@ export function initValeraAssistant(){
   const closeBtn = root.querySelector('.valera-close');
   const avatar = root.querySelector('#valeraAvatar');
   const chatEl = root.querySelector('#valeraChat');
+  const statusEl = root.querySelector('.valera-status');
 
   if(!launcher || !panel || !closeBtn || !avatar || !chatEl){
     return;
   }
 
   panel.setAttribute('aria-hidden', 'true');
+  if(statusEl) statusEl.textContent = 'онлайн';
 
   let conversationStarted = false;
-  let greetingMessage = null;
-  let greetingQueuedForRemoval = false;
   let currentIndex = 0;
   let questionResolved = false;
   let activeOptionsGroup = null;
-  let isReadyPhase = true;
 
   const getRandomReply = list => list[Math.floor(Math.random() * list.length)];
 
   const updateAvatar = mood => {
     if(mood === 'sad'){
       avatar.src = 'sad.webp';
-      avatar.alt = 'Валера грустит';
+      avatar.alt = 'Валера расстроен';
     }else{
       avatar.src = 'Fun.webp';
-      avatar.alt = 'Валера улыбается';
+      avatar.alt = 'Валера на связи';
+    }
+  };
+
+  const setStatus = text => {
+    if(statusEl){
+      statusEl.textContent = text;
     }
   };
 
   const appendMessage = (text, author = 'valera') => {
     const message = document.createElement('div');
-    message.className = `valera-message valera-message--${author}`;
+    message.className = author === 'valera' ? 'valera-message valera-message--valera' : 'valera-message valera-message--user';
 
     const bubble = document.createElement('div');
     bubble.className = 'valera-message__bubble';
@@ -100,37 +213,28 @@ export function initValeraAssistant(){
     return message;
   };
 
-  const removeGreeting = () => {
-    if(greetingMessage){
-      greetingMessage.remove();
-      greetingMessage = null;
-      greetingQueuedForRemoval = false;
-    }
-  };
-
-  const renderOptionsBlock = (options = []) => {
+  const renderOptionsBlock = options => {
     const message = document.createElement('div');
-    message.className = 'valera-message valera-message--valera valera-message--options';
-
+    message.className = 'valera-message valera-message--options';
     const bubble = document.createElement('div');
     bubble.className = 'valera-message__bubble';
-    message.appendChild(bubble);
 
     const group = document.createElement('div');
     group.className = 'valera-options';
-    group.setAttribute('role', 'group');
-    group.setAttribute('aria-label', 'Варианты ответа');
 
-    options.forEach(option => {
+    options.forEach(opt => {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'valera-option';
-      btn.textContent = option.label;
-      btn.addEventListener('click', () => option.onSelect(btn));
+      btn.textContent = opt.label;
+      btn.addEventListener('click', () => {
+        opt.onSelect(btn);
+      });
       group.appendChild(btn);
     });
 
     bubble.appendChild(group);
+    message.appendChild(bubble);
     chatEl.appendChild(message);
     chatEl.scrollTop = chatEl.scrollHeight;
     activeOptionsGroup = group;
@@ -146,23 +250,36 @@ export function initValeraAssistant(){
     }
   };
 
+  const withTyping = (cb, mood = 'fun', baseDelay = 420) => {
+    setStatus('печатает...');
+    const delay = baseDelay + Math.floor(Math.random() * 260);
+    setTimeout(() => {
+      updateAvatar(mood);
+      cb();
+      setStatus('онлайн');
+    }, delay);
+  };
+
+  const maybeShareFact = () => {
+    if(Math.random() < 0.35){
+      const fact = getRandomReply(funFacts);
+      withTyping(() => appendMessage(`Кстати: ${fact}`, 'valera'), 'fun', 350);
+    }
+  };
+
   const askQuestion = () => {
-    isReadyPhase = false;
     const current = quizQuestions[currentIndex];
     questionResolved = false;
 
-    appendMessage(current.question, 'valera');
-    renderOptionsBlock(
-      current.answers.map((answer, idx) => ({
-        label: answer,
-        onSelect: btn => handleAnswer(idx, btn)
-      }))
-    );
-
-    if(greetingMessage && !greetingQueuedForRemoval){
-      greetingQueuedForRemoval = true;
-      setTimeout(removeGreeting, 600);
-    }
+    withTyping(() => {
+      appendMessage(current.question, 'valera');
+      renderOptionsBlock(
+        current.answers.map((answer, idx) => ({
+          label: answer,
+          onSelect: btn => handleAnswer(idx, btn)
+        }))
+      );
+    }, 'fun', 260);
   };
 
   const goToNextQuestion = () => {
@@ -178,19 +295,20 @@ export function initValeraAssistant(){
     questionResolved = true;
     const current = quizQuestions[currentIndex];
     appendMessage(current.answers[selectedIndex], 'user');
-
     disableActiveOptions();
 
     const isCorrect = selectedIndex === current.correct;
     const reply = getRandomReply(isCorrect ? positiveReplies : negativeReplies);
     button.classList.add(isCorrect ? 'valera-option--correct' : 'valera-option--wrong');
-    updateAvatar(isCorrect ? 'fun' : 'sad');
-    appendMessage(reply, 'valera');
 
-    setTimeout(() => {
-      updateAvatar('fun');
-      goToNextQuestion();
-    }, 1500);
+    withTyping(() => {
+      appendMessage(reply, 'valera');
+      maybeShareFact();
+      setTimeout(() => {
+        updateAvatar('fun');
+        goToNextQuestion();
+      }, 900);
+    }, isCorrect ? 'fun' : 'sad', isCorrect ? 320 : 480);
   };
 
   const handleReadyResponse = (isReady, button) => {
@@ -198,24 +316,26 @@ export function initValeraAssistant(){
     disableActiveOptions();
 
     if(isReady){
-      appendMessage('Отлично, держись крепче — начинаем!', 'valera');
-      setTimeout(() => {
-        updateAvatar('fun');
+      withTyping(() => {
+        appendMessage('Класс, заряжаю вопросы!', 'valera');
         askQuestion();
-      }, 900);
+      }, 'fun', 280);
     }else{
-      appendMessage('Напиши как будешь готов.', 'valera');
-      setTimeout(askReadyQuestion, 2000);
+      withTyping(() => {
+        appendMessage('Ок, напиши, когда будем штурмовать тест.', 'valera');
+        setTimeout(askReadyQuestion, 1600);
+      }, 'fun', 380);
     }
   };
 
   const askReadyQuestion = () => {
-    isReadyPhase = true;
-    appendMessage('Готов принять вызов?', 'valera');
-    renderOptionsBlock([
-      { label: 'Да', onSelect: btn => handleReadyResponse(true, btn) },
-      { label: 'Нет', onSelect: btn => handleReadyResponse(false, btn) }
-    ]);
+    withTyping(() => {
+      appendMessage('Готов проверить себя?', 'valera');
+      renderOptionsBlock([
+        { label: 'Да', onSelect: btn => handleReadyResponse(true, btn) },
+        { label: 'Не сейчас', onSelect: btn => handleReadyResponse(false, btn) }
+      ]);
+    }, 'fun', 200);
   };
 
   const setPanelState = isOpen => {
@@ -229,8 +349,10 @@ export function initValeraAssistant(){
       return;
     }
     conversationStarted = true;
-    greetingMessage = appendMessage('Привет! Меня зовут Мурвiк, и я уже подготовил пару вопросов про Восточный фронт. Готов проверить себя?', 'valera');
-    setTimeout(askReadyQuestion, 900);
+    withTyping(() => {
+      appendMessage('Привет! Я Валера, и у меня есть вопросы по Первой мировой. Готов размяться?', 'valera');
+      askReadyQuestion();
+    }, 'fun', 240);
   };
 
   const openPanel = () => setPanelState(true);
@@ -252,6 +374,4 @@ export function initValeraAssistant(){
       closePanel();
     }
   });
-
-  // Чат запускается после первого открытия пользователем
 }

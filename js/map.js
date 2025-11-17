@@ -689,7 +689,7 @@ export function initMap(options = {}){
     if (!url) return;
     updateHint(defaultHint || 'Загружаем карту…', null);
     try{
-      const response = await fetch(url, { cache: 'no-store' });
+      const response = await fetch(url, { cache: 'force-cache' });
       if (!response.ok) throw new Error(`${response.status} ${response.statusText}`.trim());
       const payload = await response.json();
       applyData(payload);

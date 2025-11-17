@@ -569,6 +569,68 @@
                 padding: 0 1.5rem;
             }
         }
+
+        .video-gallery {
+            margin-top: 2rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .video-card {
+            background: linear-gradient(145deg, rgba(8, 24, 15, 0.9), rgba(3, 14, 9, 0.9));
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(6px);
+        }
+
+        .video-frame {
+            position: relative;
+            padding-top: 56.25%;
+            overflow: hidden;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .video-frame iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        .video-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin: 12px 0 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .video-meta {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .video-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+            color: var(--accent-strong);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .video-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -823,7 +885,48 @@
             </div>
         </section>
 
-       
+        <section class="section panel reveal" id="videoteka">
+            <p class="eyebrow">Видеотека</p>
+            <h2>Лекции и объяснения о причинах войны</h2>
+            <p>Подборка видео с разными ракурсами на начало Первой мировой: от общего разбора до точечных кейсов.</p>
+            <div class="video-gallery">
+                <div class="video-grid">
+                    <figure class="video-card">
+                        <div class="video-frame">
+                            <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/hcElfXfYDvI" title="Первая мировая война / Причины, события и итоги Первой мировой / Уроки истории / МИНАЕВ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <figcaption>
+                            <div class="video-title">Первая мировая война / Причины, события и итоги Первой мировой / Уроки истории / МИНАЕВ</div>
+                            <div class="video-meta">МИНАЕВ LIVE</div>
+                            <a class="video-link" href="https://www.youtube.com/watch?v=hcElfXfYDvI" target="_blank" rel="noopener">Открыть на YouTube →</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="video-card">
+                        <div class="video-frame">
+                            <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/L4QRnHEgEvA" title="Как началась Первая Мировая Война?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <figcaption>
+                            <div class="video-title">Как началась Первая Мировая Война?</div>
+                            <div class="video-meta">ИстоЧел</div>
+                            <a class="video-link" href="https://www.youtube.com/watch?v=L4QRnHEgEvA" target="_blank" rel="noopener">Открыть на YouTube →</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="video-card">
+                        <div class="video-frame">
+                            <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/TRfpy8kD4s0" title="Первая мировая война. Начало" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <figcaption>
+                            <div class="video-title">Первая мировая война. Начало</div>
+                            <div class="video-meta">Tamara Eidelman</div>
+                            <a class="video-link" href="https://www.youtube.com/watch?v=TRfpy8kD4s0" target="_blank" rel="noopener">Открыть на YouTube →</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">

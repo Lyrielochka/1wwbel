@@ -186,10 +186,10 @@ export function initValeraAssistant(){
   const updateAvatar = mood => {
     if(mood === 'sad'){
       avatar.src = 'sad.webp';
-      avatar.alt = 'Валера расстроен';
+      avatar.alt = 'Мурвiк расстроен';
     }else{
       avatar.src = 'Fun.webp';
-      avatar.alt = 'Валера на связи';
+      avatar.alt = 'Мурвiк на связи';
     }
   };
 
@@ -350,7 +350,7 @@ export function initValeraAssistant(){
     }
     conversationStarted = true;
     withTyping(() => {
-      appendMessage('Привет! Я Валера, и у меня есть вопросы по Первой мировой. Готов размяться?', 'valera');
+      appendMessage('Привет! Я Мурвiк, и у меня есть вопросы по Первой мировой. Готов размяться?', 'valera');
       askReadyQuestion();
     }, 'fun', 240);
   };
